@@ -23,5 +23,8 @@ public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options
         modelBuilder.Entity<Category>()
             .HasIndex(c => c.UrlSlug)
             .IsUnique();
+
+        SeedData.Seed(modelBuilder);
+
     }
 }

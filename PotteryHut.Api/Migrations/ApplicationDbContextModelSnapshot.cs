@@ -35,6 +35,278 @@ namespace PotteryHut.Api.Migrations
                     b.HasIndex("ProductsId");
 
                     b.ToTable("CategoryProduct");
+
+                    b.HasData(
+                        new
+                        {
+                            CategoriesId = 4,
+                            ProductsId = 1
+                        },
+                        new
+                        {
+                            CategoriesId = 7,
+                            ProductsId = 1
+                        },
+                        new
+                        {
+                            CategoriesId = 2,
+                            ProductsId = 2
+                        },
+                        new
+                        {
+                            CategoriesId = 7,
+                            ProductsId = 2
+                        },
+                        new
+                        {
+                            CategoriesId = 1,
+                            ProductsId = 3
+                        },
+                        new
+                        {
+                            CategoriesId = 7,
+                            ProductsId = 3
+                        },
+                        new
+                        {
+                            CategoriesId = 5,
+                            ProductsId = 4
+                        },
+                        new
+                        {
+                            CategoriesId = 7,
+                            ProductsId = 4
+                        },
+                        new
+                        {
+                            CategoriesId = 5,
+                            ProductsId = 5
+                        },
+                        new
+                        {
+                            CategoriesId = 7,
+                            ProductsId = 5
+                        },
+                        new
+                        {
+                            CategoriesId = 3,
+                            ProductsId = 6
+                        },
+                        new
+                        {
+                            CategoriesId = 7,
+                            ProductsId = 6
+                        },
+                        new
+                        {
+                            CategoriesId = 1,
+                            ProductsId = 7
+                        },
+                        new
+                        {
+                            CategoriesId = 8,
+                            ProductsId = 7
+                        },
+                        new
+                        {
+                            CategoriesId = 2,
+                            ProductsId = 8
+                        },
+                        new
+                        {
+                            CategoriesId = 8,
+                            ProductsId = 8
+                        },
+                        new
+                        {
+                            CategoriesId = 3,
+                            ProductsId = 9
+                        },
+                        new
+                        {
+                            CategoriesId = 8,
+                            ProductsId = 9
+                        },
+                        new
+                        {
+                            CategoriesId = 4,
+                            ProductsId = 10
+                        },
+                        new
+                        {
+                            CategoriesId = 8,
+                            ProductsId = 10
+                        },
+                        new
+                        {
+                            CategoriesId = 5,
+                            ProductsId = 11
+                        },
+                        new
+                        {
+                            CategoriesId = 8,
+                            ProductsId = 11
+                        },
+                        new
+                        {
+                            CategoriesId = 1,
+                            ProductsId = 12
+                        },
+                        new
+                        {
+                            CategoriesId = 9,
+                            ProductsId = 12
+                        },
+                        new
+                        {
+                            CategoriesId = 2,
+                            ProductsId = 13
+                        },
+                        new
+                        {
+                            CategoriesId = 9,
+                            ProductsId = 13
+                        },
+                        new
+                        {
+                            CategoriesId = 3,
+                            ProductsId = 14
+                        },
+                        new
+                        {
+                            CategoriesId = 9,
+                            ProductsId = 14
+                        },
+                        new
+                        {
+                            CategoriesId = 6,
+                            ProductsId = 15
+                        },
+                        new
+                        {
+                            CategoriesId = 9,
+                            ProductsId = 15
+                        },
+                        new
+                        {
+                            CategoriesId = 4,
+                            ProductsId = 16
+                        },
+                        new
+                        {
+                            CategoriesId = 9,
+                            ProductsId = 16
+                        },
+                        new
+                        {
+                            CategoriesId = 1,
+                            ProductsId = 17
+                        },
+                        new
+                        {
+                            CategoriesId = 10,
+                            ProductsId = 17
+                        },
+                        new
+                        {
+                            CategoriesId = 1,
+                            ProductsId = 18
+                        },
+                        new
+                        {
+                            CategoriesId = 10,
+                            ProductsId = 18
+                        },
+                        new
+                        {
+                            CategoriesId = 4,
+                            ProductsId = 19
+                        },
+                        new
+                        {
+                            CategoriesId = 10,
+                            ProductsId = 19
+                        },
+                        new
+                        {
+                            CategoriesId = 5,
+                            ProductsId = 20
+                        },
+                        new
+                        {
+                            CategoriesId = 10,
+                            ProductsId = 20
+                        },
+                        new
+                        {
+                            CategoriesId = 2,
+                            ProductsId = 21
+                        },
+                        new
+                        {
+                            CategoriesId = 10,
+                            ProductsId = 21
+                        },
+                        new
+                        {
+                            CategoriesId = 3,
+                            ProductsId = 22
+                        },
+                        new
+                        {
+                            CategoriesId = 10,
+                            ProductsId = 22
+                        },
+                        new
+                        {
+                            CategoriesId = 1,
+                            ProductsId = 23
+                        },
+                        new
+                        {
+                            CategoriesId = 11,
+                            ProductsId = 23
+                        },
+                        new
+                        {
+                            CategoriesId = 2,
+                            ProductsId = 24
+                        },
+                        new
+                        {
+                            CategoriesId = 11,
+                            ProductsId = 24
+                        },
+                        new
+                        {
+                            CategoriesId = 3,
+                            ProductsId = 25
+                        },
+                        new
+                        {
+                            CategoriesId = 11,
+                            ProductsId = 25
+                        },
+                        new
+                        {
+                            CategoriesId = 5,
+                            ProductsId = 26
+                        },
+                        new
+                        {
+                            CategoriesId = 11,
+                            ProductsId = 26
+                        },
+                        new
+                        {
+                            CategoriesId = 4,
+                            ProductsId = 27
+                        },
+                        new
+                        {
+                            CategoriesId = 11,
+                            ProductsId = 27
+                        });
                 });
 
             modelBuilder.Entity("PotteryHut.Api.Entities.Category", b =>
@@ -62,6 +334,74 @@ namespace PotteryHut.Api.Migrations
                         .IsUnique();
 
                     b.ToTable("Categories");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Muggar",
+                            UrlSlug = "muggar"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Skålar",
+                            UrlSlug = "skalar"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Tallrikar",
+                            UrlSlug = "tallrikar"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Name = "Vaser",
+                            UrlSlug = "vaser"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Name = "Serveringsfat",
+                            UrlSlug = "serveringsfat"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Name = "Serveringsskålar",
+                            UrlSlug = "serveringsskalar"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Name = "Mud Collection",
+                            UrlSlug = "mud-collection"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            Name = "Sand Collection",
+                            UrlSlug = "sand-collection"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            Name = "Grass Collection",
+                            UrlSlug = "grass-collection"
+                        },
+                        new
+                        {
+                            Id = 10,
+                            Name = "Ocean Collection",
+                            UrlSlug = "ocean-collection"
+                        },
+                        new
+                        {
+                            Id = 11,
+                            Name = "Cloud Collection",
+                            UrlSlug = "cloud-collection"
+                        });
                 });
 
             modelBuilder.Entity("PotteryHut.Api.Entities.Product", b =>
@@ -100,6 +440,278 @@ namespace PotteryHut.Api.Migrations
                         .IsUnique();
 
                     b.ToTable("Products");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CreatedAt = new DateTime(2026, 9, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Description = "Handgjord vas ur Mud Collection, en vacker detalj till hemmet.",
+                            Image = "/products/mud-vase.png",
+                            Name = "Mud Vas",
+                            Price = 249m,
+                            UrlSlug = "mud-vas"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CreatedAt = new DateTime(2026, 9, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Description = "Handgjord skål ur Mud Collection, mångsidig för både mat och dekor.",
+                            Image = "/products/mud-bowl.png",
+                            Name = "Mud Skål",
+                            Price = 149m,
+                            UrlSlug = "mud-skal"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CreatedAt = new DateTime(2026, 9, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Description = "Handgjord mugg ur Mud Collection, perfekt för morgonkaffet. Varje mugg är unik och formad för hand.",
+                            Image = "/products/mud-mug.png",
+                            Name = "Mud Mugg",
+                            Price = 179m,
+                            UrlSlug = "mud-mugg"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            CreatedAt = new DateTime(2026, 9, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Description = "Handgjort serveringsfat ur Mud Collection, perfekt för middagsbjudningar och dekor.",
+                            Image = "/products/mud-serving-bowl-small.png",
+                            Name = "Mud Serveringsfat Small",
+                            Price = 299m,
+                            UrlSlug = "mud-serveringsfat-small"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            CreatedAt = new DateTime(2026, 9, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Description = "Handgjort serveringsfat ur Mud Collection, perfekt för middagsbjudningar och dekor.",
+                            Image = "/products/mud-serving-bowl-large.png",
+                            Name = "Mud Serveringsfat Large",
+                            Price = 499m,
+                            UrlSlug = "mud-serveringsfat-large"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            CreatedAt = new DateTime(2026, 9, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Description = "Handgjord tallrik ur Mud Collection, med en unik yta där ingen är den andra lik.",
+                            Image = "/products/mud-plate.png",
+                            Name = "Mud Tallrik",
+                            Price = 279m,
+                            UrlSlug = "mud-tallrik"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            CreatedAt = new DateTime(2026, 4, 15, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Description = "Handgjord mugg ur Sand Collection, perfekt för morgonkaffet. Varje mugg är unik och formad för hand.",
+                            Image = "/products/sand-mug.png",
+                            Name = "Sand Mugg",
+                            Price = 259m,
+                            UrlSlug = "sand-mugg"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            CreatedAt = new DateTime(2026, 4, 15, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Description = "Handgjord skål ur Sand Collection, mångsidig för både mat och dekor.",
+                            Image = "/products/sand-bowl.png",
+                            Name = "Sand Skål",
+                            Price = 329m,
+                            UrlSlug = "sand-skal"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            CreatedAt = new DateTime(2026, 4, 15, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Description = "Handgjord tallrik ur Sand Collection, med en unik yta där ingen är den andra lik.",
+                            Image = "/products/sand-plate.png",
+                            Name = "Sand Tallrik",
+                            Price = 289m,
+                            UrlSlug = "sand-tallrik"
+                        },
+                        new
+                        {
+                            Id = 10,
+                            CreatedAt = new DateTime(2026, 4, 21, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Description = "Handgjord vas ur Sand Collection, en vacker detalj till hemmet.",
+                            Image = "/products/sand-vase.png",
+                            Name = "Sand Vas",
+                            Price = 249m,
+                            UrlSlug = "sand-vas"
+                        },
+                        new
+                        {
+                            Id = 11,
+                            CreatedAt = new DateTime(2026, 4, 21, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Description = "Handgjort serveringsfat ur Sand Collection, perfekt för middagsbjudningar och dekor.",
+                            Image = "/products/sand-serving-plate.png",
+                            Name = "Sand Serveringsfat",
+                            Price = 479m,
+                            UrlSlug = "sand-serveringsfat"
+                        },
+                        new
+                        {
+                            Id = 12,
+                            CreatedAt = new DateTime(2026, 3, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Description = "Handgjord mugg ur Grass Collection, perfekt för morgonkaffet. Varje mugg är unik och formad för hand.",
+                            Image = "/products/grass-mug.png",
+                            Name = "Grass Mugg",
+                            Price = 179m,
+                            UrlSlug = "grass-mugg"
+                        },
+                        new
+                        {
+                            Id = 13,
+                            CreatedAt = new DateTime(2026, 3, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Description = "Handgjord skål ur Grass Collection, mångsidig för både mat och dekor.",
+                            Image = "/products/grass-bowl.png",
+                            Name = "Grass Skål",
+                            Price = 219m,
+                            UrlSlug = "grass-skal"
+                        },
+                        new
+                        {
+                            Id = 14,
+                            CreatedAt = new DateTime(2026, 3, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Description = "Handgjord tallrik ur Grass Collection, med en unik yta där ingen är den andra lik.",
+                            Image = "/products/grass-plate.png",
+                            Name = "Grass Tallrik",
+                            Price = 279m,
+                            UrlSlug = "grass-tallrik"
+                        },
+                        new
+                        {
+                            Id = 15,
+                            CreatedAt = new DateTime(2026, 3, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Description = "Handgjord serveringsskål ur Grass Collection, perfekt för middagsbjudningar och dekor.",
+                            Image = "/products/grass-serving-bowl.png",
+                            Name = "Grass Serveringsskål",
+                            Price = 459m,
+                            UrlSlug = "grass-serveringsskal"
+                        },
+                        new
+                        {
+                            Id = 16,
+                            CreatedAt = new DateTime(2026, 3, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Description = "Handgjord vas ur Grass Collection, en vacker detalj till hemmet.",
+                            Image = "/products/grass-vase.png",
+                            Name = "Grass Vas",
+                            Price = 279m,
+                            UrlSlug = "grass-vas"
+                        },
+                        new
+                        {
+                            Id = 17,
+                            CreatedAt = new DateTime(2026, 8, 28, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Description = "Handgjord mugg ur Ocean Collection, perfekt för morgonkaffet. Varje mugg är unik och formad för hand.",
+                            Image = "/products/ocean-mug.png",
+                            Name = "Ocean Mugg Lång",
+                            Price = 289m,
+                            UrlSlug = "ocean-mugg-lang"
+                        },
+                        new
+                        {
+                            Id = 18,
+                            CreatedAt = new DateTime(2026, 8, 28, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Description = "Handgjord mugg ur Ocean Collection, perfekt för morgonkaffet. Varje mugg är unik och formad för hand.",
+                            Image = "/products/ocean-mug-round.png",
+                            Name = "Ocean Mugg Rund",
+                            Price = 289m,
+                            UrlSlug = "ocean-mugg-rund"
+                        },
+                        new
+                        {
+                            Id = 19,
+                            CreatedAt = new DateTime(2026, 8, 28, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Description = "Handgjord vas ur Ocean Collection, en vacker detalj till hemmet.",
+                            Image = "/products/ocean-vase.png",
+                            Name = "Ocean Vas",
+                            Price = 649m,
+                            UrlSlug = "ocean-vas"
+                        },
+                        new
+                        {
+                            Id = 20,
+                            CreatedAt = new DateTime(2026, 8, 28, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Description = "Handgjort serveringsfat ur Ocean Collection, perfekt för middagsbjudningar och dekor.",
+                            Image = "/products/ocean-serving-plate.png",
+                            Name = "Ocean Serveringsfat",
+                            Price = 549m,
+                            UrlSlug = "ocean-serveringsfat"
+                        },
+                        new
+                        {
+                            Id = 21,
+                            CreatedAt = new DateTime(2026, 8, 28, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Description = "Handgjord skål ur Ocean Collection, mångsidig för både mat och dekor.",
+                            Image = "/products/ocean-bowl.png",
+                            Name = "Ocean Skål",
+                            Price = 339m,
+                            UrlSlug = "ocean-skal"
+                        },
+                        new
+                        {
+                            Id = 22,
+                            CreatedAt = new DateTime(2026, 10, 10, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Description = "Handgjord tallrik ur Ocean Collection, med en unik yta där ingen är den andra lik.",
+                            Image = "/products/ocean-plate.png",
+                            Name = "Ocean Tallrik",
+                            Price = 279m,
+                            UrlSlug = "ocean-tallrik"
+                        },
+                        new
+                        {
+                            Id = 23,
+                            CreatedAt = new DateTime(2026, 2, 10, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Description = "Handgjord mugg ur Cloud Collection, perfekt för morgonkaffet. Varje mugg är unik och formad för hand.",
+                            Image = "/products/cloud-mug.png",
+                            Name = "Cloud Mugg",
+                            Price = 269m,
+                            UrlSlug = "cloud-mugg"
+                        },
+                        new
+                        {
+                            Id = 24,
+                            CreatedAt = new DateTime(2026, 2, 10, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Description = "Handgjord skål ur Cloud Collection, mångsidig för både mat och dekor.",
+                            Image = "/products/cloud-bowl.png",
+                            Name = "Cloud Skål",
+                            Price = 319m,
+                            UrlSlug = "cloud-skal"
+                        },
+                        new
+                        {
+                            Id = 25,
+                            CreatedAt = new DateTime(2026, 3, 15, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Description = "Handgjord tallrik ur Cloud Collection, med en unik yta där ingen är den andra lik.",
+                            Image = "/products/cloud-plate.png",
+                            Name = "Cloud Tallrik",
+                            Price = 289m,
+                            UrlSlug = "cloud-tallrik"
+                        },
+                        new
+                        {
+                            Id = 26,
+                            CreatedAt = new DateTime(2026, 10, 10, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Description = "Handgjort serveringsfat ur Cloud Collection, perfekt för middagsbjudningar och dekor.",
+                            Image = "/products/cloud-serving-plate.png",
+                            Name = "Cloud Serveringsfat",
+                            Price = 459m,
+                            UrlSlug = "cloud-serveringsfat"
+                        },
+                        new
+                        {
+                            Id = 27,
+                            CreatedAt = new DateTime(2026, 3, 23, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Description = "Handgjord vas ur Cloud Collection, en vacker detalj till hemmet.",
+                            Image = "/products/cloud-vase.png",
+                            Name = "Cloud Vas",
+                            Price = 289m,
+                            UrlSlug = "cloud-vas"
+                        });
                 });
 
             modelBuilder.Entity("CategoryProduct", b =>
