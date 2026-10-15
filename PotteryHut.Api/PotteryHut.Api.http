@@ -1,6 +1,13 @@
 @PotteryHut.Api_HostAddress = https://localhost:8000
 
-GET {{PotteryHut.Api_HostAddress}}/weatherforecast/
+### Hämta alla produkter
+GET {{PotteryHut.Api_HostAddress}}/api/products
 Accept: application/json
 
-###
+### Hämta produkt via slug
+GET {{PotteryHut.Api_HostAddress}}/api/products?slug=mud-mugg
+Accept: application/json
+
+### Hämta produkt via slug (ingen träff, tom lista)
+GET {{PotteryHut.Api_HostAddress}}/api/products?slug=finns-inte
+Accept: application/json
