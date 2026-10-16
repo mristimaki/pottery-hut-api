@@ -8,6 +8,6 @@ Accept: application/json
 GET {{PotteryHut.Api_HostAddress}}/api/products?slug=mud-mugg
 Accept: application/json
 
-### Hämta produkt via slug (ingen träff, tom lista)
-GET {{PotteryHut.Api_HostAddress}}/api/products?slug=finns-inte
+### Hämta produkt via id
+GET {{PotteryHut.Api_HostAddress}}/api/products/1
 Accept: application/json

@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using PotteryHut.Api.Data;
 using PotteryHut.Api.Dtos;
+using PotteryHut.Api.Mappings;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -37,17 +38,20 @@ app.MapGet("/api/products", async (string? slug, ApplicationDbContext db) =>
     }
 
     var products = await query
-            .Select(p => new ProductDto(
-            p.Id,
-            p.Name,
-            p.Description,
-            p.Price,
-            p.Image,
-            p.UrlSlug,
-            p.CreatedAt))
-        .ToListAsync();
+            .Select(p => p.ToDto())
+            .ToListAsync();
 
     return Results.Ok(products);
+});
+
+// GET /api/products/{id} - hämtar en produkt. 404 Not found om den inte finns.
+app.MapGet("/api/products/{id:int}", async (int id, ApplicationDbContext db) =>
+{
+    var product = await db.Products.FindAsync(id);
+
+    return product is null
+        ? Results.NotFound()
+        : Results.Ok(product.ToDto());
 });
 
 app.Run();
