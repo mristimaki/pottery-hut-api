@@ -1,4 +1,4 @@
-@PotteryHut.Api_HostAddress = https://localhost:8000
+@PotteryHut.Api_HostAddress = https://localhost:9000
 
 ### Hämta alla produkter
 GET {{PotteryHut.Api_HostAddress}}/api/products
@@ -11,3 +11,14 @@ Accept: application/json
 ### Hämta produkt via id
 GET {{PotteryHut.Api_HostAddress}}/api/products/1
 Accept: application/json
+
+### Skapa produkt
+POST {{PotteryHut.Api_HostAddress}}/api/products
+Content-Type: application/json
+
+{
+  "name": "Test Mugg",
+  "description": "En testprodukt",
+  "price": 99,
+  "image": "/products/test-mug.png"
+}
