@@ -1,4 +1,4 @@
-@PotteryHut.Api_HostAddress = https://localhost:9000
+@PotteryHut.Api_HostAddress = https://localhost:8000
 
 ### Hämta alla produkter
 GET {{PotteryHut.Api_HostAddress}}/api/products
@@ -22,3 +22,6 @@ Content-Type: application/json
   "price": 99,
   "image": "/products/test-mug.png"
 }
+
+### Radera produkt
+DELETE {{PotteryHut.Api_HostAddress}}/api/products/29

@@ -1,9 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using PotteryHut.Api.Data;
 using PotteryHut.Api.Dtos;
-using PotteryHut.Api.Mappings;
 using PotteryHut.Api.Entities;
 using PotteryHut.Api.Helpers;
+using PotteryHut.Api.Mappings;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -108,6 +108,22 @@ app.MapPost("/api/products", async (CreateProductDto dto, ApplicationDbContext d
 
     return Results.Created($"/api/products/{product.Id}", product.ToDto());
 
+});
+
+// DELETE /api/products/{id} - raderar en produkt. 204 om den raderades, 404 om den inte finns
+app.MapDelete("/api/products/{id:int}", async (int id, ApplicationDbContext db) =>
+{
+    var product = await db.Products.FindAsync(id);
+
+    if (product is null)
+    {
+        return Results.NotFound();
+    }
+
+    db.Products.Remove(product);
+    await db.SaveChangesAsync();
+
+    return Results.NoContent();
 });
 
 app.Run();
