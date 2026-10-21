@@ -33,3 +33,15 @@ Accept: application/json
 ### Hämta kategori via id (1-6 produkttyper, 7-11 kollektioner)
 GET {{PotteryHut.Api_HostAddress}}/api/categories/10
 Accept: application/json
+
+### Skapa kategori
+POST {{PotteryHut.Api_HostAddress}}/api/categories
+Content-Type: application/json
+
+  {
+    "name": "Test Kategori",
+    "image": "/image/test.png"
+  }
+
+### Radera kategori
+DELETE {{PotteryHut.Api_HostAddress}}/api/categories/12
