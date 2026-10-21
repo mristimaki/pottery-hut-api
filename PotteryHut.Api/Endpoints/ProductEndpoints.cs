@@ -34,9 +34,12 @@ public static class ProductEndpoints
         {
             var product = await db.Products.FindAsync(id);
 
-            return product is null
-                ? Results.NotFound()
-                : Results.Ok(product.ToDto());
+            if (product is null)
+            {
+                return Results.NotFound();
+            }
+
+            return Results.Ok(product.ToDto());
         });
 
         // POST /api/products - skapar en ny produkt.
