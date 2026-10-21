@@ -9,7 +9,7 @@ GET {{PotteryHut.Api_HostAddress}}/api/products?slug=mud-mugg
 Accept: application/json
 
 ### Hämta produkt via id
-GET {{PotteryHut.Api_HostAddress}}/api/products/1
+GET {{PotteryHut.Api_HostAddress}}/api/products/23
 Accept: application/json
 
 ### Skapa produkt
@@ -17,11 +17,11 @@ POST {{PotteryHut.Api_HostAddress}}/api/products
 Content-Type: application/json
 
 {
-  "name": "Test Mugg",
+  "name": "Test Vas",
   "description": "En testprodukt",
-  "price": 99,
-  "image": "/products/test-mug.png"
+  "price": 199,
+  "image": "/products/test-vas.png"
 }
 
 ### Radera produkt
-DELETE {{PotteryHut.Api_HostAddress}}/api/products/29
+DELETE {{PotteryHut.Api_HostAddress}}/api/products/30
