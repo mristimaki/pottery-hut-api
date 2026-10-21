@@ -306,6 +306,56 @@ namespace PotteryHut.Api.Migrations
                         {
                             CategoriesId = 11,
                             ProductsId = 27
+                        },
+                        new
+                        {
+                            CategoriesId = 1,
+                            ProductsId = 28
+                        },
+                        new
+                        {
+                            CategoriesId = 12,
+                            ProductsId = 28
+                        },
+                        new
+                        {
+                            CategoriesId = 2,
+                            ProductsId = 29
+                        },
+                        new
+                        {
+                            CategoriesId = 12,
+                            ProductsId = 29
+                        },
+                        new
+                        {
+                            CategoriesId = 5,
+                            ProductsId = 30
+                        },
+                        new
+                        {
+                            CategoriesId = 12,
+                            ProductsId = 30
+                        },
+                        new
+                        {
+                            CategoriesId = 6,
+                            ProductsId = 31
+                        },
+                        new
+                        {
+                            CategoriesId = 12,
+                            ProductsId = 31
+                        },
+                        new
+                        {
+                            CategoriesId = 3,
+                            ProductsId = 32
+                        },
+                        new
+                        {
+                            CategoriesId = 12,
+                            ProductsId = 32
                         });
                 });
 
@@ -401,6 +451,12 @@ namespace PotteryHut.Api.Migrations
                             Id = 11,
                             Name = "Cloud Collection",
                             UrlSlug = "cloud-collection"
+                        },
+                        new
+                        {
+                            Id = 12,
+                            Name = "Tropical Collection",
+                            UrlSlug = "tropical-collection"
                         });
                 });
 
@@ -711,6 +767,56 @@ namespace PotteryHut.Api.Migrations
                             Name = "Cloud Vas",
                             Price = 289m,
                             UrlSlug = "cloud-vas"
+                        },
+                        new
+                        {
+                            Id = 28,
+                            CreatedAt = new DateTime(2026, 1, 15, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Description = "Handgjord mugg ur Tropical Collection, perfekt för morgonkaffet. Varje mugg är unik och formad för hand.",
+                            Image = "/products/tropical-mug.png",
+                            Name = "Tropical Mugg",
+                            Price = 279m,
+                            UrlSlug = "tropical-mugg"
+                        },
+                        new
+                        {
+                            Id = 29,
+                            CreatedAt = new DateTime(2026, 1, 15, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Description = "Handgjord skål ur Tropical Collection, mångsidig för både mat och dekor.",
+                            Image = "/products/tropical-bowl.png",
+                            Name = "Tropical Skål",
+                            Price = 339m,
+                            UrlSlug = "tropical-skal"
+                        },
+                        new
+                        {
+                            Id = 30,
+                            CreatedAt = new DateTime(2026, 1, 15, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Description = "Handgjort serveringsfat ur Tropical Collection, perfekt för middagsbjudningar och dekor.",
+                            Image = "/products/tropical-serving-plate.png",
+                            Name = "Tropical Serveringsfat",
+                            Price = 579m,
+                            UrlSlug = "tropical-serveringsfat"
+                        },
+                        new
+                        {
+                            Id = 31,
+                            CreatedAt = new DateTime(2026, 1, 15, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Description = "Handgjord serveringsskål ur Tropical Collection, perfekt för middagsbjudningar och dekor.",
+                            Image = "/products/tropical-serving-bowl.png",
+                            Name = "Tropical Serveringsskål",
+                            Price = 459m,
+                            UrlSlug = "tropical-serveringsskal"
+                        },
+                        new
+                        {
+                            Id = 32,
+                            CreatedAt = new DateTime(2026, 1, 15, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Description = "Handgjord tallrik ur Tropical Collection, med en unik yta där ingen är den andra lik.",
+                            Image = "/products/tropical-plate.png",
+                            Name = "Tropical Tallrik",
+                            Price = 299m,
+                            UrlSlug = "tropical-tallrik"
                         });
                 });
 

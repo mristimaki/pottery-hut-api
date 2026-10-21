@@ -22,7 +22,8 @@ public static class SeedData
             new Category { Id = 8, Name = "Sand Collection", UrlSlug = "sand-collection" },
             new Category { Id = 9, Name = "Grass Collection", UrlSlug = "grass-collection" },
             new Category { Id = 10, Name = "Ocean Collection", UrlSlug = "ocean-collection" },
-            new Category { Id = 11, Name = "Cloud Collection", UrlSlug = "cloud-collection" }
+            new Category { Id = 11, Name = "Cloud Collection", UrlSlug = "cloud-collection" },
+            new Category { Id = 12, Name = "Tropical Collection", UrlSlug = "tropical-collection" }
             );
 
         modelBuilder.Entity<Product>().HasData(
@@ -295,6 +296,56 @@ public static class SeedData
                 Image = "/products/cloud-vase.png",
                 UrlSlug = "cloud-vas",
                 CreatedAt = new DateTime(2026, 3, 23, 0, 0, 0, DateTimeKind.Utc)
+            },
+            new Product
+            {
+                Id = 28,
+                Name = "Tropical Mugg",
+                Description = "Handgjord mugg ur Tropical Collection, perfekt för morgonkaffet. Varje mugg är unik och formad för hand.",
+                Price = 279m,
+                Image = "/products/tropical-mug.png",
+                UrlSlug = "tropical-mugg",
+                CreatedAt = new DateTime(2026, 1, 15, 0, 0, 0, DateTimeKind.Utc)
+            },
+            new Product
+            {
+                Id = 29,
+                Name = "Tropical Skål",
+                Description = "Handgjord skål ur Tropical Collection, mångsidig för både mat och dekor.",
+                Price = 339m,
+                Image = "/products/tropical-bowl.png",
+                UrlSlug = "tropical-skal",
+                CreatedAt = new DateTime(2026, 1, 15, 0, 0, 0, DateTimeKind.Utc)
+            },
+            new Product
+            {
+                Id = 30,
+                Name = "Tropical Serveringsfat",
+                Description = "Handgjort serveringsfat ur Tropical Collection, perfekt för middagsbjudningar och dekor.",
+                Price = 579m,
+                Image = "/products/tropical-serving-plate.png",
+                UrlSlug = "tropical-serveringsfat",
+                CreatedAt = new DateTime(2026, 1, 15, 0, 0, 0, DateTimeKind.Utc)
+            },
+            new Product
+            {
+                Id = 31,
+                Name = "Tropical Serveringsskål",
+                Description = "Handgjord serveringsskål ur Tropical Collection, perfekt för middagsbjudningar och dekor.",
+                Price = 459m,
+                Image = "/products/tropical-serving-bowl.png",
+                UrlSlug = "tropical-serveringsskal",
+                CreatedAt = new DateTime(2026, 1, 15, 0, 0, 0, DateTimeKind.Utc)
+            },
+            new Product
+            {
+                Id = 32,
+                Name = "Tropical Tallrik",
+                Description = "Handgjord tallrik ur Tropical Collection, med en unik yta där ingen är den andra lik.",
+                Price = 299m,
+                Image = "/products/tropical-plate.png",
+                UrlSlug = "tropical-tallrik",
+                CreatedAt = new DateTime(2026, 1, 15, 0, 0, 0, DateTimeKind.Utc)
             }
         );
 
@@ -329,7 +380,12 @@ public static class SeedData
             new { ProductsId = 24, CategoriesId = 2 }, new { ProductsId = 24, CategoriesId = 11 },
             new { ProductsId = 25, CategoriesId = 3 }, new { ProductsId = 25, CategoriesId = 11 },
             new { ProductsId = 26, CategoriesId = 5 }, new { ProductsId = 26, CategoriesId = 11 },
-            new { ProductsId = 27, CategoriesId = 4 }, new { ProductsId = 27, CategoriesId = 11 }
+            new { ProductsId = 27, CategoriesId = 4 }, new { ProductsId = 27, CategoriesId = 11 },
+            new { ProductsId = 28, CategoriesId = 1 }, new { ProductsId = 28, CategoriesId = 12 },
+            new { ProductsId = 29, CategoriesId = 2 }, new { ProductsId = 29, CategoriesId = 12 },
+            new { ProductsId = 30, CategoriesId = 5 }, new { ProductsId = 30, CategoriesId = 12 },
+            new { ProductsId = 31, CategoriesId = 6 }, new { ProductsId = 31, CategoriesId = 12 },
+            new { ProductsId = 32, CategoriesId = 3 }, new { ProductsId = 32, CategoriesId = 12 }
             ));
     }
 }

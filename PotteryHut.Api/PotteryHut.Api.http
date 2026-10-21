@@ -17,14 +17,14 @@ POST {{PotteryHut.Api_HostAddress}}/api/products
 Content-Type: application/json
 
 {
-  "name": "Test Vas",
-  "description": "En testprodukt",
-  "price": 199,
-  "image": "/products/test-vas.png"
+  "name": "Tropical Tallrik",
+  "description": "Handgjord tallrik ur Tropical Collection, med en unik yta där ingen är den andra lik.",
+  "price": 299,
+  "image": "/products/tropical-plate.png"
 }
 
 ### Radera produkt
-DELETE {{PotteryHut.Api_HostAddress}}/api/products/30
+DELETE {{PotteryHut.Api_HostAddress}}/api/products/35
 
 ### Hämta alla kategorier
 GET {{PotteryHut.Api_HostAddress}}/api/categories
@@ -39,9 +39,8 @@ POST {{PotteryHut.Api_HostAddress}}/api/categories
 Content-Type: application/json
 
   {
-    "name": "Test Kategori",
-    "image": "/image/test.png"
+    "name": "Tropical Collection"
   }
 
 ### Radera kategori
-DELETE {{PotteryHut.Api_HostAddress}}/api/categories/12
+DELETE {{PotteryHut.Api_HostAddress}}/api/categories/13
