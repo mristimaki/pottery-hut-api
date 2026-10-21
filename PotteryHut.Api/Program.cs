@@ -30,5 +30,6 @@ app.UseCors("AllowAngular");
 // --- Endpoints ---
 
 app.MapProductEndpoints();
+app.MapCategoryEndpoints();
 
 app.Run();
