@@ -9,8 +9,7 @@ public static class SeedData
 {
     public static void Seed(ModelBuilder modelBuilder)
     {
-        // Kategorier: 1-6 är produkttyper, 7-11 är kollektioner
-        // Tropical Collection skapas senare via POST /api/categories.
+        // Kategorier: 1-6 är produkttyper, 7-12 är kollektioner
         modelBuilder.Entity<Category>().HasData(
             new Category { Id = 1, Name = "Muggar", UrlSlug = "muggar" },
             new Category { Id = 2, Name = "Skålar", UrlSlug = "skalar" },

@@ -4,12 +4,8 @@
 GET {{PotteryHut.Api_HostAddress}}/api/products
 Accept: application/json
 
-### Hämta produkt via slug
-GET {{PotteryHut.Api_HostAddress}}/api/products?slug=mud-mugg
-Accept: application/json
-
 ### Hämta produkt via id
-GET {{PotteryHut.Api_HostAddress}}/api/products/23
+GET {{PotteryHut.Api_HostAddress}}/api/products/29
 Accept: application/json
 
 ### Skapa produkt
@@ -17,10 +13,10 @@ POST {{PotteryHut.Api_HostAddress}}/api/products
 Content-Type: application/json
 
 {
-  "name": "Tropical Tallrik",
-  "description": "Handgjord tallrik ur Tropical Collection, med en unik yta där ingen är den andra lik.",
-  "price": 299,
-  "image": "/products/tropical-plate.png"
+  "name": "Test Vas",
+  "description": "Handgjord vas ur en test kollektion.",
+  "price": 399,
+  "image": "/products/test-vas.png"
 }
 
 ### Radera produkt
@@ -39,7 +35,7 @@ POST {{PotteryHut.Api_HostAddress}}/api/categories
 Content-Type: application/json
 
   {
-    "name": "Tropical Collection"
+    "name": "Test Collection"
   }
 
 ### Radera kategori

@@ -12,7 +12,7 @@ public static class SlugGenerator
             .Replace("ä", "a")
             .Replace("ö", "o");
 
-        slug = Regex.Replace(slug, "^[^a-z0-9]+", "-");
+        slug = Regex.Replace(slug, "[^a-z0-9]+", "-");
 
         return slug.Trim('-');
     }
