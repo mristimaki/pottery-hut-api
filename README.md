@@ -59,6 +59,8 @@ Content-Type: application/json
 }
 ```
 
+Response `201 Created`:
+
 ```json
 {
   "id": 33,
