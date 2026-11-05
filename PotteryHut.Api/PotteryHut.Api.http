@@ -1,6 +1,6 @@
 @PotteryHut.Api_HostAddress = https://localhost:8000
 
-### Hämta alla produkter
+### Hämta alla produkter eller via slug
 GET {{PotteryHut.Api_HostAddress}}/api/products
 Accept: application/json
 
@@ -15,14 +15,14 @@ Content-Type: application/json
 {
   "name": "Test Vas",
   "description": "Handgjord vas ur en test kollektion.",
-  "price": 399,
+  "price": 299,
   "image": "/products/test-vas.png"
 }
 
 ### Radera produkt
-DELETE {{PotteryHut.Api_HostAddress}}/api/products/35
+DELETE {{PotteryHut.Api_HostAddress}}/api/products/37
 
-### Hämta alla kategorier
+### Hämta alla kategorier eller via slug
 GET {{PotteryHut.Api_HostAddress}}/api/categories
 Accept: application/json
 

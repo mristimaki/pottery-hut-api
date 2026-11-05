@@ -11,8 +11,7 @@ public static class ProductEndpoints
 {
     public static void MapProductEndpoints(this WebApplication app)
     {
-        // GET /api/products - hämtar alla produkter.
-        // Med ?slug= filtreras listan och returnerar 0 eller 1 produkt (alltid 200 OK)
+        // GET /api/products – hämtar alla produkter. Med ?slug= filtreras listan (alltid 200)
         app.MapGet("/api/products", async (string? slug, ApplicationDbContext db) =>
         {
             var query = db.Products.AsQueryable();
@@ -29,7 +28,7 @@ public static class ProductEndpoints
             return Results.Ok(products);
         });
 
-        // GET /api/products/{id}
+        // GET /api/products/{id} – hämtar en produkt. 200 eller 404
         app.MapGet("/api/products/{id:int}", async (int id, ApplicationDbContext db) =>
         {
             var product = await db.Products.FindAsync(id);
@@ -42,7 +41,7 @@ public static class ProductEndpoints
             return Results.Ok(product.ToDto());
         });
 
-        // POST /api/products - skapar en ny produkt.
+        // POST /api/products – skapar en produkt. 201 eller 400
         app.MapPost("/api/products", async (CreateProductDto dto, ApplicationDbContext db) =>
         {
             // Validering: samlar alla fel så att de visas samtidigt
@@ -95,7 +94,7 @@ public static class ProductEndpoints
             return Results.Created($"/api/products/{product.Id}", product.ToDto());
         });
 
-        // DELETE /api/products/{id} - raderar en produkt. 204 om den raderades, 404 om den inte finns
+        // DELETE /api/products/{id} – raderar en produkt. 204 eller 404
         app.MapDelete("/api/products/{id:int}", async (int id, ApplicationDbContext db) =>
         {
             var product = await db.Products.FindAsync(id);

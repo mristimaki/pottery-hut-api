@@ -11,8 +11,7 @@ public static class CategoryEndpoints
 {
     public static void MapCategoryEndpoints(this WebApplication app)
     {
-        // GET /api/categories - hämtar alla kategorier med deras produkter
-        // Med ?slug= filtreras listan och returnerar 0 eller 1 kategori (alltid 200 OK)
+        // GET /api/categories – hämtar alla kategorier med produkter. Med ?slug= filtreras listan (alltid 200)
         app.MapGet("/api/categories", async (string? slug, ApplicationDbContext db) =>
         {
             var query = db.Categories
@@ -29,7 +28,7 @@ public static class CategoryEndpoints
             return Results.Ok(categories.Select(c => c.ToDto()));
         });
 
-        // GET /api/categories/{id:int} - hämtar en kategori med dess produkter.
+        // GET /api/categories/{id} – hämtar en kategori med produkter. 200 eller 404
         app.MapGet("/api/categories/{id:int}", async (int id, ApplicationDbContext db) =>
         {
             var category = await db.Categories
@@ -44,7 +43,7 @@ public static class CategoryEndpoints
             return Results.Ok(category.ToDto());
         });
 
-        // POST /api/categories - skapar en ny kategori
+        // POST /api/categories – skapar en kategori. 201 eller 400
         app.MapPost("/api/categories", async (CreateCategoryDto dto, ApplicationDbContext db) =>
         {
             // Validering: samlar alla fel så att de visas samtidigt
@@ -84,7 +83,7 @@ public static class CategoryEndpoints
             return Results.Created($"/api/categories/{category.Id}", category.ToDto());
         });
 
-        // DELETE /api/categories/{id:int}
+        // DELETE /api/categories/{id} – raderar en kategori. 204 eller 404
         app.MapDelete("/api/categories/{id:int}", async (int id, ApplicationDbContext db) =>
         {
             var category = await db.Categories.FindAsync(id);

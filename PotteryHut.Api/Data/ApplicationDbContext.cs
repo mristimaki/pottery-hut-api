@@ -3,8 +3,7 @@ using PotteryHut.Api.Entities;
 
 namespace PotteryHut.Api.Data;
 
-// Kopplingen mellan applikationen och databasen, som ärver från DbContext-klassen.
-// Varje DbSet representerar en tabell i databasen.
+// Kopplingen mellan applikationen och databasen. Varje DbSet representerar en tabell.
 public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : DbContext(options)
 {
     public DbSet<Product> Products { get; set; }
